@@ -6,6 +6,9 @@ import { db ,auth } from '../firebase';
 const Home = () => {
 const [postLists,setPostList]=useState([]);
 
+  console.log(hello)
+
+
    useEffect(()=>{ 
      const getPost=async()=>{
       const data=await getDocs(collection(db,"posts"));
